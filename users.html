@@ -1,0 +1,9 @@
+<ul>
+    {% for user in users %}
+        {% if user.role == "admin" %}
+            <li><strong>{{ user.name }} (Admin)</strong></li>
+        {% else %}
+            <li>{{ user.name }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
